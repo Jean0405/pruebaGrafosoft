@@ -18,6 +18,7 @@ module.exports = {
         lightGreen: "#8fbc81",
         orange: "#E9A763",
         darkGray: "#343A3F",
+        buttonGreen: "#e6ede5",
       },
     },
   },
