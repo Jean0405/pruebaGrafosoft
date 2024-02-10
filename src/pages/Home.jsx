@@ -1,8 +1,5 @@
 import React from "react";
 
-// IMPORT ASSETS
-import imgBanner from "/img_1.svg";
-
 // IMPORT ICONS
 import {
   faPlus,
@@ -16,8 +13,10 @@ import { faBell, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // IMPORT COMPONENTS
-import { Avatar, Button, Chip, Image, Input, Tooltip } from "@nextui-org/react";
+import { Avatar, Chip, Input, Tooltip } from "@nextui-org/react";
 import { BooksData } from "../components/BooksData";
+import Banner from "../components/Banner";
+import Authors from "../components/Authors";
 
 const menuItems = [
   {
@@ -98,7 +97,7 @@ const Home = () => {
           <FontAwesomeIcon className="text-xl" icon={faPlus} />
         </button>
       </aside>
-      <main className="bg-white w-full min-h-screen sm:rounded-l-[2rem] p-5">
+      <main className="bg-white w-full min-h-screen sm:rounded-l-[1.5rem] p-5">
         {/* <--------- TOP SECTION --------> */}
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2 mb-2">
           {/* search input */}
@@ -149,37 +148,20 @@ const Home = () => {
           {/* left section */}
           <div className="col-span-2">
             {/* banner */}
-            <div className="bg-orange grid md:grid-cols-2 justify-between text-white rounded-lg gap-2 p-4">
-              <div className="flex flex-col justify-center">
-                <h1 className="font-semibold text-xl">
-                  Hola, Jean! Tienes ideas sobre un nuevo libro?
-                </h1>
-                <p className="mt-2">Vuelve tus libros tendencia mundial!</p>
-                <p>Quieres empezar a escribir una vez más?</p>
-                <Button className="bg-darkGray max-w-[12rem] text-white mt-2">
-                  Crear Borrador{" "}
-                  <FontAwesomeIcon className="text-md" icon={faPlus} />
-                </Button>
-              </div>
-              <div className="flex justify-center items-center order-first md:order-last">
-                <Image
-                  className="w-[15rem]"
-                  src={imgBanner}
-                  alt="woman and book image"
-                />
-              </div>
-            </div>
+            <Banner/>
             {/* authors section */}
             <div className="grid lg:grid-cols-3 my-3">
               <div className="col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-2">
+                {/* library stadistics */}
                 {
                   booksStadistics.map(item =>(
                     <BooksData key={item.title} bookItem={item}/>
                   ))
                 }
+                <div className="col-span-4">
+                  <Authors/>
+                </div>
               </div>
-              {/* recently section */}
-              <div></div>
             </div>
           </div>
         </div>
