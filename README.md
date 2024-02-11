@@ -1,8 +1,22 @@
-# React + Vite
+# PRUEBA GRAFOSOFT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## INSTALACIÓN
 
-Currently, two official plugins are available:
+1. Clonar el repositorio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/Jean0405/pruebaGrafosoft.git
+
+```
+2. Asegurate de entrar en la carpeta del proyecto.
+```bash
+cd pruebaGrafosoft
+
+```
+
+3. Instala dependencias y ejecuta el proyecto.
+```bash
+npm install && npm run dev
+
+```
+
