@@ -20,11 +20,11 @@ const Authors = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 flex flex-col rounded-2xl p-3">
+    <div className="bg-gray-100 flex flex-col rounded-2xl p-3 shadow-lg">
       <div className="flex justify-between items-center">
         <h2 className="font-bold text-darkGray text-xl">Autores</h2>
         <Button
-          className="bg-buttonGreen text-green font-semibold rounded-full"
+          className="h-[35px] bg-buttonGreen text-green font-semibold rounded-full"
           variant="flat"
         >
           Ver todo
